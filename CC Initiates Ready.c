@@ -50,11 +50,12 @@ int Decision_System(int x){
 
   if (x==777){
     // 유저가 오직 프로그램 점검만 요청할 경우
+    printf("Initiating...\n");
     system("xcode-select -v");
     system("xcode-select -p");
     system("brew doctor");
     system("atom -v");
-    printf("Check completed!");
+    printf("\nCheck completed!");
   }
   return 0;
 }
@@ -75,14 +76,14 @@ int main(){
 int introduction(){
   int selection;
 
-  printf("Copyright (c) 2018 Copyright HIS Computer Club All Rights Reserved.\nHIS Computer Club Program Package Checking Protocal.\n\n\n" );
+  printf("Copyright (c) 2018 Copyright HIS Computer Club All Rights Reserved.\nHIS Computer Club Package Checking Program.\n\n\n" );
   printf("Greetings, Users. I'm shis63032. One of the elders in 2018-2019 Computer Club.\n\n");
-  printf("At the point that you have received this protocal means that you have completed the Hour of Code Sessions. Congratulations!\n\n");
+  printf("At the point that you have received this program means that you have completed the Hour of Code Sessions. Congratulations!\n\n");
   printf("Before you proceed to the next step, we need to customize this computer to make it as a handy programming computer.\n");
-  printf("This protocal will assume that you are capable of 'installing programms in Graphic User Interface (GUI)'.\n\n\n");
+  printf("This program will assume that you are capable of installing programms in \"Graphic User Interface (GUI)\".\n\n\n");
   printf("Are you?\n\n");
   system("whoami");
-  printf("\n1. Yes\n2. No\n3. Program Check Protocal\n\n");
+  printf("\n1. Yes\n2. No\n\n\n\n0. Initiate Package Check.\n\n");
   printf("Type in your number: ");
   scanf("%d", &selection);
   switch (selection) {
@@ -92,9 +93,13 @@ int introduction(){
 
       break;
     case 2:
+      system("open http://appzzang.me/data/file/hot_freeboard/2108790923_bUoi4T2x_2015-09-30_17-43-50.jpg");
+      system("open https://www.wikihow.com/Download-a-File");
+      system("open https://www.wikihow.com/Deal-With-Dumb-People");
+      system("open https://www.wikihow.com/Act-More-Intelligent");
       break;
 
-    case 3:
+    case 0:
       selection = Decision_System(777);
       break;
     default:
@@ -115,7 +120,7 @@ int CLT_Installation(){
   printf("The download can be quite long, so go have some tea...\n\n\n");
 
 
-  printf("@@@@@Continue after the install is finished@@@@@\n", );
+  printf("@@@@@Continue after the install is finished@@@@@\n");
 
 
   printf("1. Continue.\n");
@@ -208,6 +213,9 @@ int Atom_Installation(int x){
     selection = Decision_System(4);
     default:
     selection = Decision_System(30);
-
   }
+}
+
+int AtomPackage_Installation(int x){
+  int selection;
 }

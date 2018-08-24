@@ -78,7 +78,7 @@ int main() {
   printf("Copyright (c) 2018 Copyright HIS Computer Club All Rights "
          "Reserved.\nHIS Computer Club Package Checking Program.\n\n\n");
   printf("Greetings, Users. I'm shis63032. One of the elders in 2018-2019 "
-         "Computer Club.\n\n");
+         "Computer Club. Before you start, make sure that you are with the tech coordinator such as Mr. Diego or Mr. Xx.\n\n");
   printf("At the point that you have received this program means that you have "
          "completed the Hour of Code Sessions. Congratulations!\n\n");
   printf("Before you proceed to the next step, we need to customize this "

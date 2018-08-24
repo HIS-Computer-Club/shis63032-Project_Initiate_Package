@@ -95,8 +95,6 @@ int main() {
   case 1:
     printf("\n\nGood. Now, we will proceed to the next step.\n");
     selection = Decision_System(1);
-
-    return 0;
     break;
 
   case 2:
@@ -115,6 +113,8 @@ int main() {
     selection = Decision_System(0);
     break;
   }
+
+  return 0;
 }
 
 // CLT 설치 함수 - 제 1 차 다운 함수.
@@ -297,6 +297,8 @@ int AtomPackage_Installation(int x) {
 }
 
 int Program_Check() {
+  int selection;
+
   printf("Copyright (c) 2018 Copyright HIS Computer Club All Rights "
          "Reserved.\nHIS Computer Club Package Checking Program.\n\n\n");
 
@@ -305,7 +307,12 @@ int Program_Check() {
   system("xcode-select -p");
   system("brew doctor");
   system("atom -v");
-  printf("\nCheck completed! You are good to go!\n");
+  printf("\nCheck completed! You are good to go!\n\n");
+
+  printf("1. Continue\n", );
+  printf("Type in your number to continue:");
+  scanf("%d", &selection);
+  
 
   return 0;
 }

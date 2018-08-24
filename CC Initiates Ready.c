@@ -239,8 +239,10 @@ int Atom_Installation(int x) {
   switch (selection) {
   case 1:
     selection = Decision_System(4);
+    break;
   default:
     selection = Decision_System(30);
+    break;
   }
 
   return 0;
@@ -287,12 +289,10 @@ int AtomPackage_Installation(int x) {
   case 1:
     selection = Decision_System(99);
     break;
-
   default:
     selection = Decision_System(40);
     break;
   }
-
   return 0;
 }
 
@@ -308,11 +308,6 @@ int Program_Check() {
   system("brew doctor");
   system("atom -v");
   printf("\nCheck completed! You are good to go!\n\n");
-
-  printf("1. Continue\n", );
-  printf("Type in your number to continue:");
-  scanf("%d", &selection);
-  
 
   return 0;
 }

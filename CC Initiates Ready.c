@@ -48,7 +48,7 @@ int main() {
                 break;
 
         default:
-                system("read -p 'Press enter to continue.'");
+                system("read -p 'Press enter to end this session.'");
                 break;
         }
 
